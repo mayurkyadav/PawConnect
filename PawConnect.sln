@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PawConnect", "PawConnect.csproj", "{0317B5C0-D578-4ED6-9BEE-DCF2E9BD9B67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0317B5C0-D578-4ED6-9BEE-DCF2E9BD9B67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0317B5C0-D578-4ED6-9BEE-DCF2E9BD9B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0317B5C0-D578-4ED6-9BEE-DCF2E9BD9B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0317B5C0-D578-4ED6-9BEE-DCF2E9BD9B67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3971945E-EFFF-4803-B73A-DBB2B4E0A2F5}
+	EndGlobalSection
+EndGlobal
