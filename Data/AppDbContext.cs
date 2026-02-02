@@ -9,6 +9,7 @@ namespace PawConnect.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<PetService> PetServices { get; set; }
+        public DbSet<Post> Posts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -70,7 +71,53 @@ namespace PawConnect.Data
                     Phone = "(519) 666-7777",
                     Description = "Behavior help for barking, leash pulling, and anxiety."
                 }
+
+
             );
+
+            builder.Entity<Post>().HasData(
+    new Post
+    {
+        Id = 1,
+        AuthorName = "Mayur",
+        AuthorHandle = "@mayur",
+        Content = "Just adopted my first puppy today 🐶 Any tips for a new pet owner?",
+        CreatedAt = new DateTime(2026, 02, 01, 10, 30, 00, DateTimeKind.Utc)
+    },
+    new Post
+    {
+        Id = 2,
+        AuthorName = "Shyamal",
+        AuthorHandle = "@shyamal",
+        Content = "Found a good groomer in Waterloo. The service was calm and quick.",
+        CreatedAt = new DateTime(2026, 02, 01, 13, 10, 00, DateTimeKind.Utc)
+    },
+    new Post
+    {
+        Id = 3,
+        AuthorName = "Haley",
+        AuthorHandle = "@haley",
+        Content = "My cat won’t eat the new food. Any easy suggestions?",
+        CreatedAt = new DateTime(2026, 02, 02, 09, 15, 00, DateTimeKind.Utc)
+    },
+    new Post
+    {
+        Id = 4,
+        AuthorName = "Samarth",
+        AuthorHandle = "@samarth",
+        Content = "Quick reminder: keep your dog hydrated on long walks, even in winter.",
+        CreatedAt = new DateTime(2026, 02, 02, 16, 40, 00, DateTimeKind.Utc)
+    },
+    new Post
+    {
+        Id = 5,
+        AuthorName = "Kabrawala",
+        AuthorHandle = "@kabrawala",
+        Content = "Does anyone know a trainer who helps with leash pulling?",
+        CreatedAt = new DateTime(2026, 02, 02, 20, 05, 00, DateTimeKind.Utc)
+    }
+);
+
         }
     }
 }
